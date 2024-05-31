@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbot</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        .navbar {
+            background: #333333;
+            color: #551b97;
+            padding: 1rem;
+        }
+
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar .brand img {
+            width: 50px;
+            height: auto;
+        }
+
+        .navbar .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .navbar .nav-links li {
+            margin-left: 1rem;
+        }
+
+        .navbar .nav-links a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .hero {
+            background: url('https://via.placeholder.com/1500x500') no-repeat center center/cover;
+            color: #1d0303;
+            padding: 5rem 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .hero button {
+            background: #333;
+            color: #fff;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .features {
+            padding: 2rem 0;
+            background: #f4f4f4;
+        }
+
+        .features .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .feature {
+            background: #3f97ca;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(5, 96, 233, 0.1);
+            flex: 1 1 30%;
+            min-width: 250px;
+            text-align: center;
+        }
+
+        .chatbot-iframe {
+            position: fixed;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 300px;
+            height: 500px;
+            border: none;
+            z-index: 1000;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="brand">
+                <img src="bot1.png" alt="Brand Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h1>Welcome to AI Chatbot</h1>
+            <p>Creating stunning websites with HTML, CSS, and JavaScript.</p>
+            <button onclick="showAlert()">Get Started</button>
+        </div>
+    </header>
+
+    <section class="features">
+        <div class="container">
+            <div class="feature">
+                <h2>Feature One</h2>
+                <p>Details about feature one. It's awesome!</p>
+            </div>
+            <div class="feature">
+                <h2>Feature Two</h2>
+                <p>Details about feature two. It's even better!</p>
+            </div>
+            <div class="feature">
+                <h2>Feature Three</h2>
+                <p>Details about feature three. It's the best!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Botpress Chatbot Embed Code -->
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+<script src="https://mediafiles.botpress.cloud/ce101c4c-113a-4559-b76b-1f95124104d7/webchat/config.js" defer></script>
+    <script>
+        function showAlert() {
+            alert("Welcome to AI Chatbot!");
+        }
+    </script>
+</body>
+</html>
